@@ -130,14 +130,14 @@ a:hover{
 }
 
 /*--------- lista e celulas dos anos --------*/
-ul#anos{
+ul#seculos{
     padding-left: 0px;
     margin-left: 67px;
     margin-top: 200px;
 
 }
 
-ul#anos li{
+ul#seculos li{
     display:table-cell;
     list-style: none;
     border-right: 1px dashed yellow;
@@ -152,15 +152,15 @@ ul#anos li{
 
 }
 
-ul#anos li#ano2021,
-ul#anos li#end{
+ul#seculos li#ano2021,
+ul#seculos li#end{
     border-right: none;
 }
-ul#anos li#end h2{
+ul#seculos li#end h2{
     color: #021a2e;
 }
 
-h2{
+h3{
     color: white;
     padding: 5px;
     border-radius: 3px;
@@ -168,7 +168,7 @@ h2{
     padding: 0;
 }
 
-.inst h2{
+.inst h3{
     color: black;
     padding: 5px;
     border-radius: 3px;
@@ -208,27 +208,8 @@ a.bullet[id|="web"]{
     border: 8px solid #197eb0;
 }
 
-a.bullet[id|="internet"]{
-    border: 8px solid #74913f;
-}
-
-a.bullet[id|="tecnologia"]{
-    border: 8px solid #bfad06;
-}
-
-a.bullet[id|="historia"]{
-    border: 8px solid #a1742d;
-}
-
-a.bullet[id|="economia"]{
-    border: 8px solid #bd3d31;
-}
-
 /*--------- checkboxes de selecao --------*/
-div.internet,
-div.tecnologia,
-div.historia,
-div.economia,
+
 div.web{
     /*--------- mudar para deixar somente web como padrao --------*/
     display:none;
@@ -242,11 +223,7 @@ div.web{
     display: block;
 }
 
-div#webfs:before,
-div#internetfs:before,
-div#tecnologiafs:before,
-div#historiafs:before,
-div#economiafs:before{
+div#webfs:before{
     content: "";
     border-radius: 100px;
     display: block;
@@ -257,10 +234,7 @@ div#economiafs:before{
     z-index: 0;
 }
 
-div#webls:after,
-div#tecnologials:after,
-div#historials:after,
-div#economials:after{
+div#webls:after{
     content: "";
     border-radius: 100px;
     height: 130px;
@@ -285,7 +259,7 @@ div.web{
     background: #9ac1db;
 }
 
-ul#anos li ul.secitem li{
+ul#seculos li ul.secitem li{
     display: ;
     border-right: 0px solid blue;
 }
@@ -312,31 +286,6 @@ a.bullet span {
     width:300px;
     line-height:20px;
     z-index: 1;
-}
-
-#ano2020 a.bullet span,
-#ano2021 a.bullet span {
-    display:none;
-    padding:14px 20px;
-    margin-top:-35px;
-    margin-left:-370px;
-    width:300px;
-    line-height:20px;
-    z-index: 1;
-}
-#ano2020 a.bullet:focus span,
-#ano2020 a.bullet:hover span,
-#ano2021 a.bullet:focus span,
-#ano2021 a.bullet:hover span,
-#ano2019 a.bullet:focus span,
-#ano2019 a.bullet:hover span{
-    display:inline;
-    position:absolute;
-    color:white;
-    border:1px solid gray;
-    background:#663399;
-    white-space: pre-wrap;
-    z-index: -1;
 }
 
 /*--------- Conteudo exibido ao clicar - Gerais--------*/
@@ -406,14 +355,14 @@ div img{
         color: black;
     }
 
-    ul#anos{
+    ul#seculos{
         padding-left: 0px;
         padding-top: 100px;
         margin: 0 auto;
         width: 600px;
     }
 
-    ul#anos li{
+    ul#seculos li{
         display:table-row;
         list-style: none;
         border-collapse: collapse;
@@ -427,17 +376,13 @@ div img{
         width: 600px;
 
     }
-    ul#anos li#end{
+    ul#seculos li#end{
         display:none;
     }
     ul#anos li#end h2{
         color: #021a2e;
     }
 
-    li div.internet,
-    li div.tecnologia,
-    li div.historia,
-    li div.economia,
     li div.web{
         /*--------- mudar para deixar somente web como padrao --------*/
         display:inline;
@@ -457,8 +402,6 @@ div img{
     nav,
     div#webfs:before,
     div#webls:after,
-    div#internetfs:before,
-    div#internetls:after,
     .close,
     form,
     .inst{
@@ -471,7 +414,7 @@ div img{
         color: black;
     }
 
-    main ul#anos{
+    main ul#seculos{
         margin-top: 0px;
 
     }
@@ -628,7 +571,7 @@ label[for|="buscanaweblist"]{
         padding-top: 1px;
     }
 
-    main ul#anos{
+    main ul#seculos{
         margin-top: 140px;
     }
 
@@ -647,24 +590,6 @@ label[for|="buscanaweblist"]{
     div a.bullet[id|="web"]{
         border: 4px solid #197eb0;
     }
-
-    div a.bullet[id|="internet"]{
-        border: 4px solid #74913f;
-    }
-
-    div a.bullet[id|="tecnologia"]{
-        border: 4px solid #bfad06;
-    }
-
-    div a.bullet[id|="historia"]{
-        border: 4px solid #a1742d;
-    }
-
-    div a.bullet[id|="economia"]{
-        border: 4px solid #bd3d31;
-    }
-
-
     .skip,
     #vertical
     {
@@ -711,11 +636,7 @@ label[for|="buscanaweblist"]{
     header a[href|="http://www.ceweb.br/"]:hover{
         top: 400px;
     }
-    main div[id|="internet"],
-    main div[id|="tecnologia"],
     main div[id|="web"],
-    main div[id|="historia"],
-    main div[id|="economia"],
     header div[id|="browse"],
     header div[id|="contrib"],
     header div[id|="about"]{
@@ -733,15 +654,7 @@ label[for|="buscanaweblist"]{
         height: 100px;
     }
     main div#webfs:before,
-    main div#internetfs:before,
-    main div#tecnologiafs:before,
-    main div#historiafs:before,
-    main div#economiafs:before,
-    main div#webls:after,
-    main div#internetls:after,
-    main div#tecnologials:after,
-    main div#historials:after,
-    main div#economials:after{
+    main div#webls:after{
         width: 130px;
         height: 100px;
     }
@@ -768,11 +681,7 @@ label[for|="buscanaweblist"]{
     }
 }
 @media (min-width: 0px) and (max-width: 1023px) and (orientation: landscape) {
-    main div[id|="internet"],
-    main div[id|="tecnologia"],
     main div[id|="web"],
-    main div[id|="historia"],
-    main div[id|="economia"],
     header div[id|="browse"],
     header div[id|="contrib"],
     header div[id|="about"]{

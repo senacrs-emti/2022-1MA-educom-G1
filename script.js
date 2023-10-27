@@ -59,12 +59,4 @@ var allweb;
          web[allweb].style.display = 'none';
     }
 }
-var allinternet;
-    for (allinternet = 0; allinternet < internet.length; allinternet++){
-    if (checkint.checked == 1){
-        internet[allinternet].style.display = 'block';
-    }else{
-         internet[allinternet].style.display = 'none';
-    }
-}
 }
