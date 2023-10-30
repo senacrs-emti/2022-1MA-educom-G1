@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Berkshire+Swash);
+@import url("single.css");
+@font-face {
+    font-family: Berkshire Swash;
+    src: url(BerkshireSwash-Regular.ttf)
+}
+
+body{
+    background-color:rgb(238, 238, 152);
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    animation-name: animaform;
+    animation-duration: 1s;
+}
