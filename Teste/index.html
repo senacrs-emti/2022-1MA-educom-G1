@@ -1,126 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linha do Tempo</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <meta charset="UTF-8"><link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <link rel="canonical" href="https://codepen.io/davidbiek/pen/ePWvKG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 </head>
-<body>
-    <header>
-        <h1>Períodos da Arte nas Américas</h1>
-    </header>
-    <main id="linha">
-    <ul id="seculos">
 
-    <li id="inicio">
-        <h2>Povos Originários</h2>
-        <div class="geral" id="webfs" style="display: block;"></div>
-        <a id="textinho01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Introdução: Povos Originários nas Américas</span></a>
-        <div id="textinho01-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3>Introdução</h3>
-            <p><img src="img01.jpg" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo14">
-        <h2>XIV</h2>
-        <div class="geral"></div>
-        <a id="textinho02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span>
-        <div id="textinho02-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo15">
-        <h2>XV</h2>
-        <div class="geral"></div>
-        <a id="textinho03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho03-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo16">
-        <h2>XVI</h2>
-        <div class="geral"></div>
-        <a id="textinho04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho04-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo17">
-        <h2>XVII</h2>
-        <div class="geral"></div>
-        <a id="textinho05" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho05-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo18">
-        <h2>XVIII</h2>
-        <div class="geral"></div>
-        <a id="textinho06" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho06-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo19">
-        <h2>XIX</h2>
-        <div class="geral"></div>
-        <a id="textinho07" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho07-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo20">
-        <h2>XX</h2>
-        <div class="geral"></div>
-        <a id="textinho08" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho08-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-
-    <li id="seculo21">
-        <h2>XXI</h2>
-        <div class="geral"></div>
-        <a id="textinho09" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span></span></a>
-        <div id="textinho09-box" class="hide" aria-live="off" aria-atomic="true" style="display: none;">
-            <h3></h3>
-            <p><img src="" alt="Povos"> </p>
-            <p>Fonte: <a href=""></a></p>
-            <a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-            </div>
-    </li>
-    </ul>
-    </main>
-</body>
-</html>
+<body translate="no">
+    <section class="timeline-carousel">
+        <div class="container">
+           <div class="row">
+              <div class="col-8 offset-2 text-center mb-5">
+                 <h1>Horizontal timeline</h1>
+                 <p class="lead text-muted">Below is a concept of a horizontal timeline slider. You can drag the slides or click on the previous and next buttons.</p> 
+                 <p><a class="text-white" target="_blank" href="https://codepen.io/davidbiek/pen/BaWYWME">Bootstrap 5 version</a></p>
+              </div>
+           </div>
+        </div>
+        <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2001-2003</span>
+                 <span class="month">Eget felis eget nunc lobortis mattis</span>
+                 <p>Eget felis eget nunc lobortis mattis aliquam faucibus. Viverra nam libero justo laoreet sit amet. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Nam libero justo laoreet sit amet cursus sit amet. Risus sed vulputate odio ut enim blandit. Quam adipiscing vitae proin sagittis nisl rhoncus.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2003</span>
+                 <span class="month">Tristique magna sit amet</span>
+                 <p>Tristique magna sit amet purus gravida quis blandit turpis.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2003</span>
+                 <span class="month">Mauris pellentesque pulvinar pellentesque habitant</span>
+                 <p>Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Cursus in hac habitasse platea dictumst quisque. Ipsum dolor sit amet consectetur adipiscing elit. </p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2004</span>
+                 <span class="month">Cum sociis natoque penatibus</span>
+                 <p>Cum sociis natoque penatibus et magnis dis. Interdum velit laoreet id donec ultrices tincidunt arcu non. Lorem sed risus ultricies tristique. Dui vivamus arcu felis bibendum ut. Tortor id aliquet lectus proin nibh nisl condimentum id.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <div class="pointer"></div>
+                 <span class="month">Dictumst vestibulum rhoncus est</span>
+                 <p>Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Posuere ac ut consequat semper.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2005</span>
+                 <span class="month">Id nibh tortor id aliquet</span>
+                 <p>Nunc eget lorem dolor sed viverra. Id nibh tortor id aliquet. Sed blandit libero volutpat sed cras. Fermentum posuere urna nec tincidunt praesent. Id ornare arcu odio ut sem nulla pharetra diam.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2006</span>
+                 <span class="month">Pulvinar neque laoreet suspendisse</span>
+                 <p>Pulvinar neque laoreet suspendisse interdum consectetur. Libero volutpat sed cras ornare. Ac auctor augue mauris augue.</p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+           
+           <!--Timeline item-->
+           <div class="timeline-carousel__item">
+              <div class="timeline-carousel__image">
+                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://via.placeholder.com/550x320/171717/cccccc?text=550x320') center center; background-size:cover;"></div>
+              </div>
+              <div class="timeline-carousel__item-inner">
+                 <span class="year">2007</span>
+                 <span class="month">Egestas quis ipsum</span>
+                 <p>Non odio euismod lacinia at. Egestas quis ipsum suspendisse ultrices gravida. Dui nunc mattis enim ut tellus elementum sagittis vitae. Lectus quam id leo in vitae turpis massa sed elementum. Ridiculus mus mauris vitae ultricies leo integer malesuada. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus./p>
+                 <a href="#" class="read-more">Read more</a>
+              </div>
+           </div>
+           <!--/Timeline item-->
+     
+        </div>
+     </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script id="rendered-js">
+    </script>
+</body></html>
