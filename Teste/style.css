@@ -54,13 +54,7 @@
   cursor: -moz-grab;
   cursor: -webkit-grab;
 }
-.timeline-carousel__item .media-wrapper {
-  opacity: 0.4;
-  padding-bottom: 71.4%;
-  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-}
+
 .timeline-carousel__item:last-child .timeline-carousel__item-inner:after {
   width: calc(100% - 30px);
 }
